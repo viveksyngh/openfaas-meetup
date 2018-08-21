@@ -79,5 +79,5 @@ $ kubectl delete function/figlet -n openfaas-fn
 
 ### Deploy a function using `kubectl`
 ```sh
-faas-cli generate -f operator-demo.yml | kubectl apply -f - 
+$ faas-cli generate -f operator-demo.yml | kubectl apply -f - 
 ```

@@ -1,0 +1,10 @@
+---
+apiVersion: openfaas.com/v1alpha2
+kind: Function
+metadata:
+  name: operator-demo
+  namespace: openfaas-fn
+spec:
+  name: operator-demo
+  image: viveksyngh/operator-demo:latest
+
