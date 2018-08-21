@@ -126,3 +126,5 @@ docker service create --constraint="node.role==manager" \
  --env enable_lchown=false \
 openfaas/of-builder:$OF_BUILDER_TAG
 ```
+
+Run ngrok in your local to allow github application to send events to functions running on your local cluster. Update the ngrok link in your webhook URL for the github application.
