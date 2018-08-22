@@ -128,3 +128,13 @@ openfaas/of-builder:$OF_BUILDER_TAG
 ```
 
 Run ngrok in your local to allow github application to send events to functions running on your local cluster. Update the ngrok link in your webhook URL for the github application.
+
+### Deploy overview function to get functions information
+```sh
+cd dashboard
+```
+Modify the `stack.yml` to use correct `gateway_url` according to backend.
+
+```sh
+faas build && faas deploy 
+```

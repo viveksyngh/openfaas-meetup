@@ -64,7 +64,7 @@ Note: Deploy a function from store using OpenFaaS gateway UI
 
 ## List all deployed function using `kubectl`
 ```sh
-$ kubectl get functions -n openfaas/fn
+$ kubectl get functions -n openfaas-fn
 ```
 
 ## Get a function information
