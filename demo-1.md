@@ -72,12 +72,17 @@ $ kubectl get functions -n openfaas-fn
 $ kubectl get function/figlet -n openfaas-fn
 ```
 
-### Delete a function using `kubectl` 
+## Delete a function using `kubectl` 
 ```sh
 $ kubectl delete function/figlet -n openfaas-fn
 ```
 
-### Deploy a function using `kubectl`
+## Deploy a function using `kubectl`
 ```sh
 $ faas-cli generate -f operator-demo.yml | kubectl apply -f - 
+```
+
+## Delete OpenFaaS installation
+```sh
+$ helm delete --purge openfaas
 ```
